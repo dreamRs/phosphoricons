@@ -10,17 +10,20 @@ ph(
   fill = "#333",
   height = "1.33em",
   width = NULL,
+  title = name,
   ...
 )
 }
 \arguments{
 \item{name}{Name of the icon to use.}
 
-\item{type}{Type of icon.}
+\item{type}{Type of icon (from thinnest to thickest): \code{thin}, \code{light} (default), \code{regular}, \code{bold} or \code{fill}.}
 
 \item{fill}{Fill color for the icon.}
 
 \item{height, width}{Height and width in valid CSS unit.}
+
+\item{title}{Add a \verb{<title>} tag to provides an accessible, short-text description of the icon. Use \code{NULL} for no title.}
 
 \item{...}{Attributes passed to the SVG tag.}
 }
@@ -29,4 +32,12 @@ An SVG tag.
 }
 \description{
 Create a \verb{<svg></svg>} tag to render an icon.
+}
+\examples{
+library(phosphoricons)
+
+ph("airplane-tilt")
+ph("airplane-tilt", height = 128)
+ph("airplane-tilt", height = 128, type = "fill")
+ph("airplane-tilt", height = 128, type = "fill", fill = "steelblue")
 }

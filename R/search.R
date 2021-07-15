@@ -16,7 +16,7 @@ search_icon <- function(pattern, view_results = interactive()) {
   search_name <- grep(pattern = pattern, x = phosphoricons_names, value = TRUE)
   if (length(search_name) < 1) {
     warning("No icon found...")
-    return(invisible(character(0)))
+    return(character(0))
   }
   view_icons <- browsable(tags$div(
     lapply(
@@ -33,6 +33,6 @@ search_icon <- function(pattern, view_results = interactive()) {
   ))
   if (isTRUE(view_results))
     print(view_icons)
-  return(invisible(search_name))
+  return(search_name)
 }
 
