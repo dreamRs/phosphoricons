@@ -20,12 +20,12 @@ ph <- function(name,
                width = NULL,
                ...) {
   type <- match.arg(type)
-  # name <- check_icon(name)
+  name <- check_icon(name)
   if (!is.null(height))
     height <- validateCssUnit(height)
   if (!is.null(width))
     width <- validateCssUnit(width)
-  svg <- ph_icons[[paste(name, type, sep = "-")]]
+  svg <- phosphoricons_svg_tags[[paste(name, type, sep = "-")]]
   svg <- tagAppendAttributes(
     tag = svg,
     height = height,
