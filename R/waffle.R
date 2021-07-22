@@ -1,4 +1,20 @@
 
+#' Waffle plot with icons
+#'
+#' @param values A vector of values to be plotted.
+#' @param colors Colors to use for each unique values.
+#' @param icons Icon or list of icons associated to unique values.
+#' @param ncol,nrow Number of column and row in the matrix.
+#' @param flow Populate matrix by rows or columns.
+#' @param width Width of the matrix.
+#'
+#' @return HTML tags.
+#' @export
+#' 
+#' @importFrom htmltools tags validateCssUnit tagAppendAttributes browsable
+#' @importFrom stats setNames
+#'
+#' @example examples/waffle_icon.R
 waffle_icon <- function(values,
                         colors,
                         icons,
@@ -8,7 +24,12 @@ waffle_icon <- function(values,
                         width = NULL) {
   flow <- match.arg(flow)
   n <- length(values)
-  unique_values <- unique(values)
+  if (inherits(values, "factor")) {
+    unique_values <- levels(values)
+    values <- as.character(values)
+  } else {
+    unique_values <- unique(values)
+  }
   if (!identical(length(unique_values), length(colors)))
     stop("Colors must be as same length as number of unique values")
   if (!is_named(colors)) {
@@ -82,7 +103,7 @@ waffle_icon <- function(values,
       )
     )
   )
-  htmltools::browsable(TAG)
+  browsable(TAG)
 }
 
 

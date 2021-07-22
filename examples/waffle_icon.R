@@ -1,19 +1,22 @@
+library(phosphoricons)
 
 waffle_icon(
-  values = sort(sample(c("Aa", "Bb", "Cc"), 200, TRUE)),
+  values = sort(sample(c("Aa", "Bb", "Cc"), 100, TRUE)),
   colors = c("#81F4E1", "#56CBF9", "#FF729F"),
   icons = ph("user", type = "fill", height = 32)
 )
 
 waffle_icon(
-  values = sample(c("Chat", "Chien"), 200, TRUE),
+  values = sample(c("Cats", "Dogs"), 200, TRUE),
   colors = list(
-    Chat = "firebrick",
-    Chien = "forestgreen"
+    Cats = "#456990",
+    Dogs = "#F45B69"
   ),
   icons = list(
-    Chat = ph("cat", height = NULL),
-    Chien = ph("dog", height = NULL)
+    Cats = ph("cat", height = NULL),
+    Dogs = ph("dog", height = NULL)
   ),
-  width = "400px"
+  ncol = 15,
+  nrow = 8,
+  width = "500px"
 )

@@ -2,8 +2,10 @@
 
 export(ph)
 export(search_icon)
+export(waffle_icon)
 importFrom(htmltools,browsable)
 importFrom(htmltools,tagAppendAttributes)
 importFrom(htmltools,tagAppendChild)
 importFrom(htmltools,tags)
 importFrom(htmltools,validateCssUnit)
+importFrom(stats,setNames)
