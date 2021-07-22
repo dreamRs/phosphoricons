@@ -22,3 +22,4 @@ Depends:
     R (>= 2.10)
 Imports: 
     htmltools
+Suggests: tinytest
