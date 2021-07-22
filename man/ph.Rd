@@ -2,14 +2,15 @@
 % Please edit documentation in R/ph.R
 \name{ph}
 \alias{ph}
-\title{Phosphor Icons}
+\title{Phosphor Icon}
 \usage{
 ph(
   name,
   type = c("light", "regular", "thin", "bold", "fill"),
-  fill = "#333",
+  fill = "currentColor",
   height = "1.33em",
   width = NULL,
+  vertical_align = "-0.25em",
   title = name,
   ...
 )
@@ -19,9 +20,11 @@ ph(
 
 \item{type}{Type of icon (from thinnest to thickest): \code{thin}, \code{light} (default), \code{regular}, \code{bold} or \code{fill}.}
 
-\item{fill}{Fill color for the icon.}
+\item{fill}{Fill color for the icon, default is \code{currentColor} which should match the color of the text where the icon is used.}
 
 \item{height, width}{Height and width in valid CSS unit.}
+
+\item{vertical_align}{Vertical alignment for the icon, this depend on the size of the icon.}
 
 \item{title}{Add a \verb{<title>} tag to provides an accessible, short-text description of the icon. Use \code{NULL} for no title.}
 
