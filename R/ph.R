@@ -31,7 +31,9 @@ ph <- function(name,
     height <- validateCssUnit(height)
   if (!is.null(width))
     width <- validateCssUnit(width)
-  svg <- phosphoricons_svg_tags[[paste(name, type, sep = "-")]]
+  if (!identical(type, "regular"))
+    name <- paste(name, type, sep = "-")
+  svg <- phosphoricons_svg_tags[[name]]
   svg <- tagAppendAttributes(
     tag = svg,
     height = height,

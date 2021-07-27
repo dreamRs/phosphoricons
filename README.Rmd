@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# phosphoricons
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Use [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) in shiny applications or rmarkdown documents. Visit [phosphoricons.com](https://phosphoricons.com/) for a list of all available icons.
+
+## Installation
+
+You can install {phosphoricons} from GitHub with:
+
+```r
+remotes::install_github("dreamRs/phosphoricons")
+```
+
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r basic}
+library(phosphoricons)
+ph("lightning")
+```
+
+There's 5 types of icon:
+
+```{r, results='hold'}
+ph("lightning", type = "thin", height = 32)
+ph("lightning", type = "light", height = 32)
+ph("lightning", type = "regular", height = 32)
+ph("lightning", type = "bold", height = 32)
+ph("lightning", type = "fill", height = 32)
+```
+
