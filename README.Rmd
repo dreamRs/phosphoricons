@@ -11,6 +11,7 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+library(phosphoricons)
 ```
 
 # phosphoricons
@@ -31,21 +32,23 @@ remotes::install_github("dreamRs/phosphoricons")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Create an icon with `ph()` function:
 
-```{r basic}
+```{r basic, eval=FALSE}
 library(phosphoricons)
 ph("lightning")
 ```
+![](man/figures/lightning-light.svg){height=32}
+
 
 There's 5 types of icon:
 
 ```{r different-types, eval=FALSE}
-ph("lightning", type = "thin", height = 32, width = 32)
-ph("lightning", type = "light", height = 32, width = 32)
-ph("lightning", type = "regular", height = 32, width = 32)
-ph("lightning", type = "bold", height = 32, width = 32)
-ph("lightning", type = "fill", height = 32, width = 32)
+ph("lightning", type = "thin")
+ph("lightning", type = "light")
+ph("lightning", type = "regular")
+ph("lightning", type = "bold")
+ph("lightning", type = "fill")
 ```
 
 ```{r, echo=FALSE}
@@ -56,8 +59,8 @@ cat(as.character(ph("lightning", type = "bold", height = "256px", width = "256px
 cat(as.character(ph("lightning", type = "fill", height = "256px", width = "256px")), file = "man/figures/lightning-fill.svg")
 ```
 
-![](man/figures/lightning-thin.svg){height=24}
-![](man/figures/lightning-light.svg){height=24}
-![](man/figures/lightning-regular.svg){height=24}
-![](man/figures/lightning-bold.svg){height=24}
-![](man/figures/lightning-fill.svg){height=24}
+![](man/figures/lightning-thin.svg){height=32}
+![](man/figures/lightning-light.svg){height=32}
+![](man/figures/lightning-regular.svg){height=32}
+![](man/figures/lightning-bold.svg){height=32}
+![](man/figures/lightning-fill.svg){height=32}
