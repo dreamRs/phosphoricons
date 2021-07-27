@@ -19,7 +19,7 @@ You can install {phosphoricons} from GitHub with:
 remotes::install_github("dreamRs/phosphoricons")
 ```
 
-## Example
+## Icons usage
 
 Create an icon with `ph()` function:
 
@@ -62,10 +62,33 @@ ph("lightning", weight = "fill")
 
 <img src="man/figures/lightning-fill.svg" height="32" />
 
-Colorize icon usin fill argument:
+Colorize icon using `fill` argument:
 
 ``` r
 ph("lightning", weight = "bold", fill = "gold")
 ```
 
 <img src="man/figures/lightning-bold-gold.svg" height="32" />
+
+## Bonus
+
+Icon waffle:
+
+``` r
+waffle_icon(
+  values = sample(c("Cats", "Dogs"), 200, TRUE),
+  colors = list(
+    Cats = "#456990",
+    Dogs = "#F45B69"
+  ),
+  icons = list(
+    Cats = ph("cat", height = NULL),
+    Dogs = ph("dog", height = NULL)
+  ),
+  ncol = 15,
+  nrow = 8,
+  width = "500px"
+)
+```
+
+![](man/figures/waffle.png)
