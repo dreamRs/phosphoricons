@@ -3,7 +3,7 @@ library(phosphoricons)
 waffle_icon(
   values = sort(sample(c("Aa", "Bb", "Cc"), 100, TRUE)),
   colors = c("#81F4E1", "#56CBF9", "#FF729F"),
-  icons = ph("user", type = "fill", height = 32)
+  icons = ph("user", weight = "fill", height = 32)
 )
 
 waffle_icon(

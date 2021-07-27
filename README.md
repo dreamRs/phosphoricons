@@ -30,34 +30,34 @@ ph("lightning")
 
 <img src="man/figures/lightning-light.svg" height="32" />
 
-There’s 5 types of icon:
+There’s 5 weights available:
 
 ``` r
-ph("lightning", type = "thin")
+ph("lightning", weight = "thin")
 ```
 
 <img src="man/figures/lightning-thin.svg" height="32" />
 
 ``` r
-ph("lightning", type = "light")
+ph("lightning", weight = "light")
 ```
 
 <img src="man/figures/lightning-light.svg" height="32" />
 
 ``` r
-ph("lightning", type = "regular")
+ph("lightning", weight = "regular")
 ```
 
 <img src="man/figures/lightning-regular.svg" height="32" />
 
 ``` r
-ph("lightning", type = "bold")
+ph("lightning", weight = "bold")
 ```
 
 <img src="man/figures/lightning-bold.svg" height="32" />
 
 ``` r
-ph("lightning", type = "fill")
+ph("lightning", weight = "fill")
 ```
 
 <img src="man/figures/lightning-fill.svg" height="32" />
@@ -65,7 +65,7 @@ ph("lightning", type = "fill")
 Colorize icon usin fill argument:
 
 ``` r
-ph("lightning", type = "bold", fill = "gold")
+ph("lightning", weight = "bold", fill = "gold")
 ```
 
 <img src="man/figures/lightning-bold-gold.svg" height="32" />

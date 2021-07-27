@@ -6,7 +6,7 @@
 \usage{
 ph(
   name,
-  type = c("light", "regular", "thin", "bold", "fill"),
+  weight = c("light", "regular", "thin", "bold", "fill"),
   fill = "currentColor",
   height = "1.33em",
   width = NULL,
@@ -18,7 +18,7 @@ ph(
 \arguments{
 \item{name}{Name of the icon to use.}
 
-\item{type}{Type of icon (from thinnest to thickest): \code{thin}, \code{light} (default), \code{regular}, \code{bold} or \code{fill}.}
+\item{weight}{Weight of icon (from thinnest to thickest): \code{thin}, \code{light} (default), \code{regular}, \code{bold} or \code{fill}.}
 
 \item{fill}{Fill color for the icon, default is \code{currentColor} which should match the color of the text where the icon is used.}
 
@@ -40,7 +40,8 @@ Create a \verb{<svg></svg>} tag to render an icon.
 library(phosphoricons)
 
 ph("airplane-tilt")
+ph("house")
 ph("airplane-tilt", height = 128)
-ph("airplane-tilt", height = 128, type = "fill")
-ph("airplane-tilt", height = 128, type = "fill", fill = "steelblue")
+ph("airplane-tilt", height = 128, weight = "fill")
+ph("airplane-tilt", height = 128, weight = "fill", fill = "steelblue")
 }

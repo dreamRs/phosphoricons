@@ -12,7 +12,7 @@ ui <- navbarPage(
     ),
     wellPanel(
       style = "background: #151515; color: #FFF;",
-      "This icon should be white:", ph("crown", type = "bold")
+      "This icon should be white:", ph("crown", weight = "bold")
     ),
     actionButton("btn1", tagList(ph("play"), "a button"))
   )
