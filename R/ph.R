@@ -34,6 +34,8 @@ ph <- function(name,
   if (!identical(type, "regular"))
     name <- paste(name, type, sep = "-")
   svg <- phosphoricons_svg_tags[[name]]
+  svg$attribs$id <- NULL
+  svg$attribs$class <- "phosphoricons-svg"
   svg <- tagAppendAttributes(
     tag = svg,
     height = height,
