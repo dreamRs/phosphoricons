@@ -52,3 +52,21 @@ ph <- function(name,
   }
   browsable(svg)
 }
+
+
+
+
+
+ph_img <- function(name, type = "regular", width = "24px", height = "24px") {
+  icon <- ph(name = name, type = type, height = "256px", width = "256px")
+  img <- tags$img(
+    style = css(
+      width = validateCssUnit(width),
+      height = validateCssUnit(height)
+    ),
+    src = sprintf("data:image/svg+xml;utf8,%s", as.character(icon))
+  )
+  browsable(img)
+}
+
+

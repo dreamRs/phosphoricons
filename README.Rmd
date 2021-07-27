@@ -41,10 +41,10 @@ ph("lightning")
 There's 5 types of icon:
 
 ```{r, results='hold'}
-ph("lightning", type = "thin", height = 32)
-ph("lightning", type = "light", height = 32)
-ph("lightning", type = "regular", height = 32)
-ph("lightning", type = "bold", height = 32)
-ph("lightning", type = "fill", height = 32)
+phosphoricons:::ph_img("lightning", type = "thin", height = 32, width = 32)
+phosphoricons:::ph_img("lightning", type = "light", height = 32, width = 32)
+phosphoricons:::ph_img("lightning", type = "regular", height = 32, width = 32)
+phosphoricons:::ph_img("lightning", type = "bold", height = 32, width = 32)
+phosphoricons:::ph_img("lightning", type = "fill", height = 32, width = 32)
 ```
 
