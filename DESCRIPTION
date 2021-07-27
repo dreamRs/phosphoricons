@@ -12,7 +12,8 @@ Authors@R:
       person(given = "Phosphor Icons",
              role = "cph",
              comment = "Phosphor Icons <https://github.com/phosphor-icons>"))
-Description: What the package does (one paragraph).
+Description: Use 'Phosphor' icons in 'shiny' applications or 'rmarkdown' documents. Icons are available in
+    5 differents weights and are fully customizable: colors, size, orientation and more.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

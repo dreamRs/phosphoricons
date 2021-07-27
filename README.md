@@ -6,8 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Use [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons)
-in shiny applications or rmarkdown documents. Visit
+R wrapper for using [Phosphor
+Icons](https://github.com/phosphor-icons/phosphor-icons) in shiny
+applications or rmarkdown documents. Visit
 [phosphoricons.com](https://phosphoricons.com/) for a list of all
 available icons.
 
