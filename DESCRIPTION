@@ -9,9 +9,9 @@ Authors@R:
       person(given = "Fanny",
              family = "Meyer",
              role = "aut"),
-      person(given = "rektdeckard",
+      person(given = "Phosphor Icons",
              role = "cph",
-             comment = "Phosphor Icons"))
+             comment = "Phosphor Icons <https://github.com/phosphor-icons>"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8

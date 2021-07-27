@@ -11,6 +11,7 @@ waffle_icon(
   ncol = 10,
   nrow = 10,
   flow = c("row", "column"),
+  legend = TRUE,
   width = NULL
 )
 }
@@ -24,6 +25,8 @@ waffle_icon(
 \item{ncol, nrow}{Number of column and row in the matrix.}
 
 \item{flow}{Populate matrix by rows or columns.}
+
+\item{legend}{Logical, display or not a legend.}
 
 \item{width}{Width of the matrix.}
 }

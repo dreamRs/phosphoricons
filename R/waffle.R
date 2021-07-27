@@ -6,12 +6,13 @@
 #' @param icons Icon or list of icons associated to unique values.
 #' @param ncol,nrow Number of column and row in the matrix.
 #' @param flow Populate matrix by rows or columns.
+#' @param legend Logical, display or not a legend.
 #' @param width Width of the matrix.
 #'
 #' @return HTML tags.
 #' @export
 #' 
-#' @importFrom htmltools tags validateCssUnit tagAppendAttributes browsable
+#' @importFrom htmltools tags validateCssUnit tagAppendAttributes tagAppendChild browsable
 #' @importFrom stats setNames
 #'
 #' @example examples/waffle_icon.R
@@ -21,6 +22,7 @@ waffle_icon <- function(values,
                         ncol = 10,
                         nrow = 10,
                         flow = c("row", "column"),
+                        legend = TRUE,
                         width = NULL) {
   flow <- match.arg(flow)
   n <- length(values)
@@ -80,29 +82,34 @@ waffle_icon <- function(values,
           )
         }
       )
-    ),
-    tags$div(
-      style = "margin-top: 20px; text-align: center;",
-      lapply(
-        X = unique_values,
-        FUN = function(x) {
-          icon <- icons[[x]]
-          icon$attribs$height <- NULL
-          icon$attribs$fill <- NULL
-          tags$span(
-            style = "margin-right: 20px;",
-            tagAppendAttributes(
-              icon,
-              height = "1.3333em",
-              fill = colors[[x]],
-              style = "vertical-align: -0.25em;"
-            ),
-            x
-          )
-        }
-      )
     )
   )
+  if (isTRUE(legend)) {
+    TAG <- tagAppendChild(
+      TAG,
+      tags$div(
+        style = "margin-top: 20px; text-align: center;",
+        lapply(
+          X = unique_values,
+          FUN = function(x) {
+            icon <- icons[[x]]
+            icon$attribs$height <- NULL
+            icon$attribs$fill <- NULL
+            tags$span(
+              style = "margin-right: 20px;",
+              tagAppendAttributes(
+                icon,
+                height = "1.3333em",
+                fill = colors[[x]],
+                style = "vertical-align: -0.25em;"
+              ),
+              x
+            )
+          }
+        )
+      )
+    )
+  }
   browsable(TAG)
 }
 
