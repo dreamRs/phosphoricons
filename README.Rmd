@@ -12,6 +12,12 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 library(phosphoricons)
+cat(as.character(ph("lightning", type = "thin", height = "256px", width = "256px")), file = "man/figures/lightning-thin.svg")
+cat(as.character(ph("lightning", type = "light", height = "256px", width = "256px")), file = "man/figures/lightning-light.svg")
+cat(as.character(ph("lightning", type = "regular", height = "256px", width = "256px")), file = "man/figures/lightning-regular.svg")
+cat(as.character(ph("lightning", type = "bold", height = "256px", width = "256px")), file = "man/figures/lightning-bold.svg")
+cat(as.character(ph("lightning", type = "fill", height = "256px", width = "256px")), file = "man/figures/lightning-fill.svg")
+cat(as.character(ph("lightning", type = "bold", fill = "gold", height = "256px", width = "256px")), file = "man/figures/lightning-bold-gold.svg")
 ```
 
 # phosphoricons
@@ -43,24 +49,32 @@ ph("lightning")
 
 There's 5 types of icon:
 
-```{r different-types, eval=FALSE}
+```{r type-thin, eval=FALSE}
 ph("lightning", type = "thin")
+```
+![](man/figures/lightning-thin.svg){height=32}
+```{r type-light, eval=FALSE}
 ph("lightning", type = "light")
+```
+![](man/figures/lightning-light.svg){height=32}
+```{r type-regular, eval=FALSE}
 ph("lightning", type = "regular")
+```
+![](man/figures/lightning-regular.svg){height=32}
+```{r type-bold, eval=FALSE}
 ph("lightning", type = "bold")
+```
+![](man/figures/lightning-bold.svg){height=32}
+```{r type-fill, eval=FALSE}
 ph("lightning", type = "fill")
 ```
-
-```{r, echo=FALSE}
-cat(as.character(ph("lightning", type = "thin", height = "256px", width = "256px")), file = "man/figures/lightning-thin.svg")
-cat(as.character(ph("lightning", type = "light", height = "256px", width = "256px")), file = "man/figures/lightning-light.svg")
-cat(as.character(ph("lightning", type = "regular", height = "256px", width = "256px")), file = "man/figures/lightning-regular.svg")
-cat(as.character(ph("lightning", type = "bold", height = "256px", width = "256px")), file = "man/figures/lightning-bold.svg")
-cat(as.character(ph("lightning", type = "fill", height = "256px", width = "256px")), file = "man/figures/lightning-fill.svg")
-```
-
-![](man/figures/lightning-thin.svg){height=32}
-![](man/figures/lightning-light.svg){height=32}
-![](man/figures/lightning-regular.svg){height=32}
-![](man/figures/lightning-bold.svg){height=32}
 ![](man/figures/lightning-fill.svg){height=32}
+
+Colorize icon usin fill argument:
+
+```{r color-icon, eval=FALSE}
+ph("lightning", type = "bold", fill = "gold")
+```
+![](man/figures/lightning-bold-gold.svg){height=32}
+
+

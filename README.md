@@ -34,14 +34,38 @@ There’s 5 types of icon:
 
 ``` r
 ph("lightning", type = "thin")
-ph("lightning", type = "light")
-ph("lightning", type = "regular")
-ph("lightning", type = "bold")
-ph("lightning", type = "fill")
 ```
 
 <img src="man/figures/lightning-thin.svg" height="32" />
+
+``` r
+ph("lightning", type = "light")
+```
+
 <img src="man/figures/lightning-light.svg" height="32" />
+
+``` r
+ph("lightning", type = "regular")
+```
+
 <img src="man/figures/lightning-regular.svg" height="32" />
+
+``` r
+ph("lightning", type = "bold")
+```
+
 <img src="man/figures/lightning-bold.svg" height="32" />
+
+``` r
+ph("lightning", type = "fill")
+```
+
 <img src="man/figures/lightning-fill.svg" height="32" />
+
+Colorize icon usin fill argument:
+
+``` r
+ph("lightning", type = "bold", fill = "gold")
+```
+
+<img src="man/figures/lightning-bold-gold.svg" height="32" />
