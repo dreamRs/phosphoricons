@@ -9,6 +9,7 @@ ph(
   weight = c("light", "regular", "thin", "bold", "fill"),
   fill = "currentColor",
   height = "1.33em",
+  rotate = NULL,
   width = NULL,
   vertical_align = "-0.25em",
   title = name,
@@ -23,6 +24,8 @@ ph(
 \item{fill}{Fill color for the icon, default is \code{currentColor} which should match the color of the text where the icon is used.}
 
 \item{height, width}{Height and width in valid CSS unit.}
+
+\item{rotate}{Numeric, angle to rotate the icon.}
 
 \item{vertical_align}{Vertical alignment for the icon, this depend on the size of the icon.}
 
@@ -41,6 +44,8 @@ library(phosphoricons)
 
 ph("airplane-tilt")
 ph("house")
+ph("house", fill = "#F45B69")
+ph("cake", rotate = 45)
 ph("airplane-tilt", height = 128)
 ph("airplane-tilt", height = 128, weight = "fill")
 ph("airplane-tilt", height = 128, weight = "fill", fill = "steelblue")

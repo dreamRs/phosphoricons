@@ -6,6 +6,7 @@
 #' @param name Name of the icon to use.
 #' @param weight Weight of icon (from thinnest to thickest): `thin`, `light` (default), `regular`, `bold` or `fill`.
 #' @param fill Fill color for the icon, default is `currentColor` which should match the color of the text where the icon is used.
+#' @param rotate Numeric, angle to rotate the icon.
 #' @param height,width Height and width in valid CSS unit.
 #' @param vertical_align Vertical alignment for the icon, this depend on the size of the icon.
 #' @param title Add a `<title>` tag to provides an accessible, short-text description of the icon. Use `NULL` for no title.
@@ -21,6 +22,7 @@ ph <- function(name,
                weight = c("light", "regular", "thin", "bold", "fill"),
                fill = "currentColor",
                height = "1.33em",
+               rotate= NULL,
                width = NULL,
                vertical_align = "-0.25em",
                title = name,
@@ -41,7 +43,10 @@ ph <- function(name,
     height = height,
     width = width,
     fill = fill,
-    style = css(vertical_align = vertical_align),
+    style = css(
+      vertical_align = vertical_align,
+      transform = if (!is.null(rotate)) sprintf("rotate(%sdeg)", rotate)
+    ),
     ...
   )
   if (!is.null(title)) {

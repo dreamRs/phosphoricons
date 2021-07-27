@@ -2,6 +2,8 @@ library(phosphoricons)
 
 ph("airplane-tilt")
 ph("house")
+ph("house", fill = "#F45B69")
+ph("cake", rotate = 45)
 ph("airplane-tilt", height = 128)
 ph("airplane-tilt", height = 128, weight = "fill")
 ph("airplane-tilt", height = 128, weight = "fill", fill = "steelblue")
