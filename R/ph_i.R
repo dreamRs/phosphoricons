@@ -50,8 +50,7 @@ ph_i <- function(name,
   if (!identical(weight, "regular"))
     name <- paste(name, weight, sep = "-")
   icon <- tags$i(
-    class = paste0("ph-", name),
-    class = paste0("ph-", size),
+    class = paste0("ph-", name, " ph-", size),
     style = css(
       color = color
     ),
