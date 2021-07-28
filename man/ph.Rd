@@ -43,6 +43,8 @@ Create a \verb{<svg></svg>} tag to render an icon.
 library(phosphoricons)
 
 ph("airplane-tilt")
+ph("airplane-tilt", weight = "thin")
+ph("airplane-tilt", weight = "bold")
 ph("house")
 ph("house", fill = "#F45B69")
 ph("cake", rotate = 45)

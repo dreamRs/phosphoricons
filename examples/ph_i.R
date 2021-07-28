@@ -1,0 +1,10 @@
+library(phosphoricons)
+
+ph_i("airplane-tilt")
+ph_i("airplane-tilt", weight = "thin")
+ph_i("airplane-tilt", weight = "bold")
+ph_i("house")
+ph_i("house", color = "#F45B69")
+ph_i("cake")
+ph_i("cake", size = "xl")
+ph_i("cake", size = "10x")
