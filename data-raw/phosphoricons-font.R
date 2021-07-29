@@ -28,3 +28,4 @@ sass::sass(
   output = "inst/assets/css/phosphor.min.css", 
   options = sass::sass_options(output_style = "compressed")
 )
+

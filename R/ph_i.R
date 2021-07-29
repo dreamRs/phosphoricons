@@ -13,7 +13,7 @@ html_dependency_phosphor <- function() {
     version = "1.3.2",
     src = c(file = "assets"),
     package = "phosphoricons",
-    stylesheet = "css/phosphor.css",
+    stylesheet = "css/phosphor.min.css",
     all_files = TRUE
   )
 }
