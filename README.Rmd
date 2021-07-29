@@ -80,6 +80,50 @@ ph("lightning", weight = "bold", fill = "gold")
 
 ## Bonus
 
+Fill icon according to percentage:
+
+```{r icon-fill-perc-1, eval=FALSE}
+ph_fill(
+  ph("heart", weight = "fill", height = 128),
+  colors = c("#DF0101", "#F6CECE"),
+  breaks = 0.7
+)
+```
+
+```{r icon-fill-perc-1b, echo=FALSE}
+icon <- ph_fill(
+  ph("heart", weight = "fill", height = "256px", width = "256px"),
+  colors = c("#DF0101", "#F6CECE"),
+  breaks = 0.7
+)
+cat(as.character(icon), file = "man/figures/icon-fill-perc-1.svg")
+```
+![](man/figures/icon-fill-perc-1.svg){height=128}
+
+
+```{r icon-fill-perc-2, eval=FALSE}
+ph_fill(
+  ph("star", weight = "fill", height = 128, stroke = "gold", `stroke-width` = 10),
+  colors = c("gold", "#FFF"),
+  breaks = 0.5,
+  orientation = "h"
+)
+```
+
+```{r icon-fill-perc-2b, echo=FALSE}
+icon <- ph_fill(
+  ph("star", weight = "fill", height = "256px", width = "256px", stroke = "gold", `stroke-width` = 10),
+  colors = c("gold", "#FFF"),
+  breaks = 0.5,
+  orientation = "h"
+)
+cat(as.character(icon), file = "man/figures/icon-fill-perc-2.svg")
+```
+![](man/figures/icon-fill-perc-2.svg){height=128}
+
+
+
+
 Icon waffle:
 
 ```{r waffle, eval=FALSE}

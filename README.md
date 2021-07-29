@@ -73,6 +73,29 @@ ph("lightning", weight = "bold", fill = "gold")
 
 ## Bonus
 
+Fill icon according to percentage:
+
+``` r
+ph_fill(
+  ph("heart", weight = "fill", height = 128),
+  colors = c("#DF0101", "#F6CECE"),
+  breaks = 0.7
+)
+```
+
+<img src="man/figures/icon-fill-perc-1.svg" height="128" />
+
+``` r
+ph_fill(
+  ph("star", weight = "fill", height = 128, stroke = "gold", `stroke-width` = 10),
+  colors = c("gold", "#FFF"),
+  breaks = 0.5,
+  orientation = "h"
+)
+```
+
+<img src="man/figures/icon-fill-perc-2.svg" height="128" />
+
 Icon waffle:
 
 ``` r

@@ -21,8 +21,8 @@
 ph <- function(name,
                weight = c("light", "regular", "thin", "bold", "fill"),
                fill = "currentColor",
+               rotate = NULL,
                height = "1.33em",
-               rotate= NULL,
                width = NULL,
                vertical_align = "-0.25em",
                title = name,
@@ -109,8 +109,4 @@ ph_fill <- function(icon, colors, breaks, orientation = c("vertical", "horizonta
       )
     )
   )
-}
-
-genId <- function (bytes = 12) {
-  paste(format(as.hexmode(sample(256, bytes, replace = TRUE) - 1), width = 2), collapse = "")
 }
