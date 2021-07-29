@@ -61,3 +61,56 @@ ph <- function(name,
 
 
 
+#' @title Fill SVG icon
+#' 
+#' @description Fill an SVG icon with different colors according to breaks.
+#'
+#' @param icon An icon generated with [ph()].
+#' @param colors Colors to fill icon with.
+#' @param breaks Breaks where to switch colors.
+#' @param orientation Orientation of color filling: `vertical` (from bottom to top), `horizontal` (from left to right).
+#'
+#' @return An SVG tag.
+#' @export
+#'
+#' @example examples/ph_fill.R
+ph_fill <- function(icon, colors, breaks, orientation = c("vertical", "horizontal")) {
+  orientation <- match.arg(orientation)
+  if ((length(breaks) + 1) != length(colors))
+    stop("colors must be the length of breaks plus 1")
+  if (!all(breaks <= 1) | !all(breaks >= 0))
+    stop("breaks must be between 0 and 1")
+  if (!inherits(icon, "shiny.tag"))
+    stop("icon must be a 'shiny.tag' object, generated with ph() for example.", call. = FALSE)
+  if (!identical(icon$name, "svg"))
+    stop("icon must be an SVG tag, generated with ph() for example.", call. = FALSE)
+  id <- genId()
+  icon$attribs$fill <- sprintf("url(#%s)", id)
+  tagAppendChild(
+    icon,
+    tags$defs(
+      tags$linearGradient(
+        id = id,
+        x1 = if (identical(orientation, "vertical")) "0", 
+        y1 = if (identical(orientation, "vertical")) "1", 
+        x2 = if (identical(orientation, "vertical")) "0", 
+        y2 = if (identical(orientation, "vertical")) "0",
+        height = 0, width = 0,
+        mapply(
+          FUN = function(offset, color) {
+            tags$stop(
+              offset = offset, `stop-color` = color
+            )
+          },
+          offset = c(0, rep(breaks, each = 2), 1),
+          color = rep(colors, each = 2), 
+          SIMPLIFY = FALSE
+        )
+      )
+    )
+  )
+}
+
+genId <- function (bytes = 12) {
+  paste(format(as.hexmode(sample(256, bytes, replace = TRUE) - 1), width = 2), collapse = "")
+}

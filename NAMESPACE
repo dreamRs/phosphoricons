@@ -2,6 +2,7 @@
 
 export(html_dependency_phosphor)
 export(ph)
+export(ph_fill)
 export(ph_i)
 export(search_icon)
 export(waffle_icon)
