@@ -24,5 +24,6 @@ Depends:
 Imports: 
     htmltools (>= 0.3)
 Suggests: 
+    covr,
     shiny,
     tinytest

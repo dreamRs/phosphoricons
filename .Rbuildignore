@@ -4,3 +4,5 @@
 ^data-raw$
 ^examples$
 ^README\.Rmd$
+^\.github$
+^codecov\.yml$

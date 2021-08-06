@@ -4,6 +4,10 @@
 # phosphoricons
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/dreamRs/phosphoricons/workflows/R-CMD-check/badge.svg)](https://github.com/dreamRs/phosphoricons/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/dreamRs/phosphoricons/branch/master/graph/badge.svg)](https://codecov.io/gh/dreamRs/phosphoricons?branch=master)
 <!-- badges: end -->
 
 R wrapper for using [Phosphor
