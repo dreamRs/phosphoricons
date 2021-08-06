@@ -2,7 +2,7 @@
 % Please edit documentation in R/ph_i.R
 \name{ph_i}
 \alias{ph_i}
-\title{Phosphor Icon with Font}
+\title{Phosphor Font Icon with Font}
 \usage{
 ph_i(
   name,
@@ -28,7 +28,7 @@ ph_i(
 An HTML tag.
 }
 \description{
-Use Phosphor Icon with font files.
+Create a Phosphor icon with font files.
 }
 \examples{
 library(phosphoricons)

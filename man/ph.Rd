@@ -2,14 +2,14 @@
 % Please edit documentation in R/ph.R
 \name{ph}
 \alias{ph}
-\title{Phosphor Icon}
+\title{Phosphor SVG Icon}
 \usage{
 ph(
   name,
   weight = c("light", "regular", "thin", "bold", "fill"),
   fill = "currentColor",
-  height = "1.33em",
   rotate = NULL,
+  height = "1.33em",
   width = NULL,
   vertical_align = "-0.25em",
   title = name,
@@ -23,9 +23,9 @@ ph(
 
 \item{fill}{Fill color for the icon, default is \code{currentColor} which should match the color of the text where the icon is used.}
 
-\item{height, width}{Height and width in valid CSS unit.}
-
 \item{rotate}{Numeric, angle to rotate the icon.}
+
+\item{height, width}{Height and width in valid CSS unit.}
 
 \item{vertical_align}{Vertical alignment for the icon, this depend on the size of the icon.}
 

@@ -10,5 +10,31 @@ html_dependency_phosphor()
 An \code{htmltools::htmlDependency()} object.
 }
 \description{
-HTML dependency for Phosphor
+Allow to explicitly load dependency for using Phosphor icons.
+}
+\note{
+Dependency is automatically loaded when using \code{\link[=ph_i]{ph_i()}}, but in some case,
+like when using \code{icon} argument in some function, you might need to call \code{html_dependency_phosphor()} to make icons appears.
+}
+\examples{
+
+library(shiny)
+library(phosphoricons)
+
+ui <- navbarPage(
+  title = "Phosphor Icons",
+  header = list(
+    html_dependency_phosphor()
+  ),
+  tabPanel("Home", icon = ph_i("house")),
+  tabPanel("Parameters"),
+  tabPanel("Results")
+)
+
+server <- function(input, output, session) {
+  
+}
+
+if (interactive())
+  shinyApp(ui, server)
 }
