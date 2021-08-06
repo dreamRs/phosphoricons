@@ -71,6 +71,19 @@ ph("lightning", weight = "bold", fill = "gold")
 
 <img src="man/figures/lightning-bold-gold.svg" height="32" />
 
+There’s two type of icons:
+
+-   SVG icons, created with `ph()`
+-   Font icons, created with `ph_i()`
+
+There’s a big debate between Web Fonts vs SVG for icons, but mainly:
+
+-   Web fonts require an `htmlDependency` that include all icons even if
+    you use one, it will increase the size of your document in self
+    contained mode.
+-   SVG icons won’t currently work with some shiny functions with an
+    `icon` argument.
+
 ## Bonus
 
 Fill icon according to percentage:

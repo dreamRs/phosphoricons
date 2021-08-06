@@ -1,5 +1,5 @@
 
-#' @title Phosphor SVG Icon
+#' @title Phosphor SVG Icons
 #'
 #' @description Create a `<svg></svg>` tag to render an icon.
 #'

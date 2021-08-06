@@ -1,9 +1,9 @@
 
-#' @title HTML dependency for Phosphor
+#' @title HTML dependency for Phosphor Icons
 #' 
 #' @description Allow to explicitly load dependency for using Phosphor icons.
 #'
-#' @return An `htmltools::htmlDependency()` object.
+#' @return An [htmltools::htmlDependency()] object.
 #' 
 #' @note Dependency is automatically loaded when using [ph_i()], but in some case,
 #'  like when using `icon` argument in some function, you might need to call `html_dependency_phosphor()` to make icons appears.
@@ -26,7 +26,7 @@ html_dependency_phosphor <- function() {
 
 
 
-#' @title Phosphor Font Icon with Font
+#' @title Phosphor Font Icons
 #' 
 #' @description Create a Phosphor icon with font files.
 #'
