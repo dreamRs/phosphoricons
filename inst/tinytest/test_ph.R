@@ -1,11 +1,10 @@
 
-# Placeholder with simple test
-
 icon <- ph("user")
 expect_inherits(icon, "shiny.tag")
 expect_identical(icon$name, "svg")
 
 expect_error(ph("donotexist"))
+expect_error(ph(c("heart", "star")))
 
 icon <- ph("user", height = NULL, width = "48px", fill = "red", rotate = 45)
 expect_identical(icon$attribs$fill, "red")
