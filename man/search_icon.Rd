@@ -4,15 +4,15 @@
 \alias{search_icon}
 \title{Search Icons}
 \usage{
-search_icon(pattern, view_results = interactive())
+search_icon(pattern, output = c("viewer", "console"))
 }
 \arguments{
 \item{pattern}{Pattern to search for in icon's name.}
 
-\item{view_results}{View icons found in viewer.}
+\item{output}{View results in the viewer or in the console.}
 }
 \value{
-a character vector invisibly.
+If \code{output = "console"} a character vector, if \code{output = "viewer"} a \code{shiny.tag}.
 }
 \description{
 Search Icons

@@ -2,12 +2,12 @@
 % Please edit documentation in R/ph_i.R
 \name{html_dependency_phosphor}
 \alias{html_dependency_phosphor}
-\title{HTML dependency for Phosphor}
+\title{HTML dependency for Phosphor Icons}
 \usage{
 html_dependency_phosphor()
 }
 \value{
-An \code{htmltools::htmlDependency()} object.
+An \code{\link[htmltools:htmlDependency]{htmltools::htmlDependency()}} object.
 }
 \description{
 Allow to explicitly load dependency for using Phosphor icons.

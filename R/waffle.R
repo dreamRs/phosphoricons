@@ -41,6 +41,8 @@ waffle_icon <- function(values,
     icons <- lapply(seq_along(unique_values), function(x) {icons})
     icons <- setNames(as.list(icons), unique_values)
   }
+  if (!is_named(icons)) 
+    stop("'icons' must be a single icon or a named list of icons.")
   if (!identical(length(unique_values), length(icons)))
     stop("icons must be of length 1 or as same length as number of unique values")
   percentage <- lapply(
@@ -52,11 +54,12 @@ waffle_icon <- function(values,
   percentage <- setNames(percentage, unique_values)
   percentage[[length(percentage)]] <- (ncol * nrow) - Reduce(`+`, percentage[-length(percentage)])
   TAG <- tags$div(
-    class = "container-waffle-icons",
+    class = "phosphor-waffle-container",
     style = if (!is.null(width))
       paste0("width:", validateCssUnit(width), ";"),
     style = "margin: auto;",
     tags$div(
+      class = "phosphor-waffle-grid",
       style = "display: grid;",
       style = sprintf("grid-template-columns: repeat(%s, 1fr);", ncol),
       style = sprintf("grid-template-rows: repeat(%s, 1fr);", nrow),
@@ -88,6 +91,7 @@ waffle_icon <- function(values,
     TAG <- tagAppendChild(
       TAG,
       tags$div(
+        class = "phosphor-waffle-legend",
         style = "margin-top: 20px; text-align: center;",
         lapply(
           X = unique_values,
@@ -96,6 +100,7 @@ waffle_icon <- function(values,
             icon$attribs$height <- NULL
             icon$attribs$fill <- NULL
             tags$span(
+              class = "phosphor-waffle-legend-item",
               style = "margin-right: 20px;",
               tagAppendAttributes(
                 icon,

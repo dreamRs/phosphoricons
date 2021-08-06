@@ -5,6 +5,8 @@ expect_identical(icon$name, "svg")
 
 expect_error(ph("donotexist"))
 expect_error(ph(c("heart", "star")))
+expect_warning(ph("number-circle"))
+expect_silent(ph("number-circle-eigh")) # only one match
 
 icon <- ph("user", height = NULL, width = "48px", fill = "red", rotate = 45)
 expect_identical(icon$attribs$fill, "red")

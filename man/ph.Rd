@@ -2,7 +2,7 @@
 % Please edit documentation in R/ph.R
 \name{ph}
 \alias{ph}
-\title{Phosphor SVG Icon}
+\title{Phosphor SVG Icons}
 \usage{
 ph(
   name,

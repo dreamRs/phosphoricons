@@ -2,7 +2,7 @@
 % Please edit documentation in R/ph_i.R
 \name{ph_i}
 \alias{ph_i}
-\title{Phosphor Font Icon with Font}
+\title{Phosphor Font Icons}
 \usage{
 ph_i(
   name,
