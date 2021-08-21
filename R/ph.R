@@ -55,7 +55,7 @@ ph <- function(name,
       tags$title(title)
     )
   }
-  browsable(svg)
+  browsable(svg, value = interactive())
 }
 
 

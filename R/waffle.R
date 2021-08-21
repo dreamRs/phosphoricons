@@ -115,17 +115,6 @@ waffle_icon <- function(values,
       )
     )
   }
-  browsable(TAG)
+  browsable(TAG, value = interactive())
 }
 
-
-is_named <- function (x) {
-  nms <- names(x)
-  if (is.null(nms)) {
-    return(FALSE)
-  }
-  if (any(!nzchar(nms))) {
-    return(FALSE)
-  }
-  TRUE
-}

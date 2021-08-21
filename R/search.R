@@ -34,7 +34,7 @@ search_icon <- function(pattern, output = c("viewer", "console")) {
           )
         }
       )
-    ))
+    ), value = interactive())
   } else {
     search_name
   }

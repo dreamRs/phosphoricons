@@ -63,5 +63,5 @@ ph_i <- function(name,
     ...,
     html_dependency_phosphor()
   )
-  browsable(icon)
+  browsable(icon, value = interactive())
 }
