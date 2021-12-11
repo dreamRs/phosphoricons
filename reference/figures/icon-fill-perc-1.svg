@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" class="phosphor-svg" height="256px" width="256px" fill="url(#c0996eda6147c9d489a16c3e)" style="vertical-align:-0.25em;">
+  <path d="M236.02344,92c0,30.56494-17.71387,62.00488-52.64844,93.44629A317.34027,317.34027,0,0,1,131.93262,222.98a8.00089,8.00089,0,0,1-7.81836,0C119.86426,220.6001,20.02344,163.86279,20.02344,92a60.02029,60.02029,0,0,1,108-36.04053A60.02029,60.02029,0,0,1,236.02344,92Z"></path>
+  <title>heart-fill</title>
+  <defs>
+    <linearGradient id="c0996eda6147c9d489a16c3e" x1="0" y1="1" x2="0" y2="0" height="0" width="0">
+      <stop offset="0" stop-color="#DF0101"></stop>
+      <stop offset="0.7" stop-color="#DF0101"></stop>
+      <stop offset="0.7" stop-color="#F6CECE"></stop>
+      <stop offset="1" stop-color="#F6CECE"></stop>
+    </linearGradient>
+  </defs>
+</svg>
