@@ -16,10 +16,10 @@
 html_dependency_phosphor <- function() {
   htmlDependency(
     name = "phosphor-icons",
-    version = "1.3.2",
+    version = "1.4.1",
     src = c(file = "assets"),
     package = "phosphoricons",
-    stylesheet = "css/phosphor.min.css",
+    stylesheet = "css/icons.min.css",
     all_files = TRUE
   )
 }
