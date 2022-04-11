@@ -1,4 +1,4 @@
-# phosphoricons (unreleased)
+# phosphoricons 0.1.2
 
 * Updated to Phosphoricons 1.4.1
 
