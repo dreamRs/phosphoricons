@@ -53,10 +53,17 @@ ph_i <- function(name,
     choices = c("lg", "xxs", "xs", "sm", "xl", "1x", "2x", "3x", "4x", "5x", "6x", "7x", "8x", "9x", "10x")
   )
   name <- check_icon(name)
-  if (!identical(weight, "regular"))
-    name <- paste(name, weight, sep = "-")
+  
   icon <- tags$i(
-    class = paste0("ph-", name, " ph-", size),
+    class = paste(
+      if (!identical(weight, "regular")) {
+        paste0("ph-", weight)
+      } else {
+        "ph"
+      },
+      paste0("ph-", name),
+      paste0("ph-", size)
+    ),
     style = css(
       color = color
     ),
