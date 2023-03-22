@@ -6,9 +6,10 @@
 <!-- badges: start -->
 
 [![version](http://www.r-pkg.org/badges/version/phosphoricons)](https://CRAN.R-project.org/package=phosphoricons)
-[![R-CMD-check](https://github.com/dreamRs/phosphoricons/workflows/R-CMD-check/badge.svg)](https://github.com/dreamRs/phosphoricons/actions)
+[![](https://cranlogs.r-pkg.org/badges/phosphoricons?color=brightgreen)](https://cran.r-project.org/package=phosphoricons)
 [![Codecov test
 coverage](https://codecov.io/gh/dreamRs/phosphoricons/branch/master/graph/badge.svg)](https://app.codecov.io/gh/dreamRs/phosphoricons?branch=master)
+[![R-CMD-check](https://github.com/dreamRs/phosphoricons/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dreamRs/phosphoricons/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 R wrapper for using [Phosphor
