@@ -1,3 +1,6 @@
 [submodule "data-raw/phosphor-icons"]
 	path = data-raw/phosphor-icons
 	url = https://github.com/phosphor-icons/phosphor-icons
+[submodule "data-raw/phosphor-icons-core"]
+	path = data-raw/phosphor-icons-core
+	url = https://github.com/phosphor-icons/core

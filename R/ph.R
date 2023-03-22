@@ -38,6 +38,7 @@ ph <- function(name,
   svg <- phosphoricons_svg_tags[[name]]
   svg$attribs$id <- NULL
   svg$attribs$class <- "phosphor-svg"
+  svg$attribs$fill <- NULL
   svg <- tagAppendAttributes(
     tag = svg,
     height = height,
