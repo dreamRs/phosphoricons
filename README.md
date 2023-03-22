@@ -84,16 +84,16 @@ ph("lightning", weight = "bold", fill = "gold")
 
 There’s two type of icons:
 
--   SVG icons, created with `ph()`
--   Font icons, created with `ph_i()`
+- SVG icons, created with `ph()`
+- Font icons, created with `ph_i()`
 
 There’s a big debate between Web Fonts vs SVG for icons, but mainly:
 
--   Web fonts require an `htmlDependency` that include all icons even if
-    you use one, it will increase the size of your document in self
-    contained mode.
--   SVG icons won’t currently work with some shiny functions with an
-    `icon` argument.
+- Web fonts require an `htmlDependency` that include all icons even if
+  you use one, it will increase the size of your document in self
+  contained mode.
+- SVG icons won’t currently work with some shiny functions with an
+  `icon` argument.
 
 ## Bonus
 
