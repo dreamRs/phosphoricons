@@ -13,8 +13,8 @@ coverage](https://codecov.io/gh/dreamRs/phosphoricons/branch/master/graph/badge.
 <!-- badges: end -->
 
 R wrapper for using [Phosphor
-Icons](https://github.com/phosphor-icons/phosphor-icons) in shiny
-applications or rmarkdown documents. Visit
+Icons](https://github.com/phosphor-icons/web) in shiny applications or
+rmarkdown documents. Visit
 [phosphoricons.com](https://phosphoricons.com/) for a list of all
 available icons.
 

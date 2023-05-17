@@ -29,7 +29,7 @@ cat(as.character(ph("lightning", weight = "bold", fill = "gold", height = "256px
 [![R-CMD-check](https://github.com/dreamRs/phosphoricons/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dreamRs/phosphoricons/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-R wrapper for using [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) in shiny applications or rmarkdown documents. Visit [phosphoricons.com](https://phosphoricons.com/) for a list of all available icons.
+R wrapper for using [Phosphor Icons](https://github.com/phosphor-icons/web) in shiny applications or rmarkdown documents. Visit [phosphoricons.com](https://phosphoricons.com/) for a list of all available icons.
 
 ## Installation
 
