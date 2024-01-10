@@ -26,4 +26,5 @@ Suggests:
     covr,
     shiny,
     tinytest
-URL: https://dreamrs.github.io/phosphoricons/
+URL: https://dreamrs.github.io/phosphoricons/, https://github.com/dreamRs/phosphoricons
+BugReports: https://github.com/dreamRs/phosphoricons/issues
