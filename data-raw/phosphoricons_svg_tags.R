@@ -47,7 +47,7 @@ library(htmltools)
 source("data-raw/phosphor-svg.R")
 browsable(phosphoricons_svg_tags$`pulse-bold`)
 browsable(phosphoricons_svg_tags$`pulse-thin`)
-browsable(phosphoricons_svg_tags$`battery-warning-vertical-bold`)
+browsable(phosphoricons_svg_tags$`avocado-bold`)
 
 
 # Icon's name ----

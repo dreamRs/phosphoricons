@@ -41,3 +41,4 @@ sass::sass(
   options = sass::sass_options(output_style = "compressed")
 )
 # unlink(list.files("inst/assets/css", pattern = "scss$", full.names = TRUE))
+# unlink("inst/assets/css/.sass_cache_keys")
