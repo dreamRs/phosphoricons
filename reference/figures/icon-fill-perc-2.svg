@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" class="phosphor-svg" height="256px" width="256px" fill="url(#14867d6c3f03a74246941a35)" style="vertical-align:-0.25em;" stroke="gold" stroke-width="10">
-  <path d="M234,115.5l-45.2,37.6,14.3,58.1A16.5,16.5,0,0,1,187.3,232a16.1,16.1,0,0,1-8.7-2.6l-50.5-31.9h-.2L81,227.2a18,18,0,0,1-20.1-.6,18.5,18.5,0,0,1-7-19.6l13.5-53.1L22,115.5a16.8,16.8,0,0,1-5.2-18.1A16.5,16.5,0,0,1,31.4,86l59-3.8,22.4-55.8A16.4,16.4,0,0,1,128,16h0a16.4,16.4,0,0,1,15.2,10.4l22,55.5L224.6,86a16.4,16.4,0,0,1,14.6,11.4A16.8,16.8,0,0,1,234,115.5Z"></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" class="phosphor-svg" height="256px" width="256px" fill="url(#7c81989b0e0854be19d7008f)" style="vertical-align:-0.25em;" stroke="gold" stroke-width="10">
+  <path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path>
   <title>star-fill</title>
   <defs>
-    <linearGradient id="14867d6c3f03a74246941a35" height="0" width="0">
+    <linearGradient id="7c81989b0e0854be19d7008f" height="0" width="0">
       <stop offset="0" stop-color="gold"></stop>
       <stop offset="0.5" stop-color="gold"></stop>
       <stop offset="0.5" stop-color="#FFF"></stop>
