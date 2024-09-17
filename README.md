@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![version](http://www.r-pkg.org/badges/version/phosphoricons)](https://CRAN.R-project.org/package=phosphoricons)
+[![version](https://www.r-pkg.org/badges/version/phosphoricons)](https://CRAN.R-project.org/package=phosphoricons)
 [![](https://cranlogs.r-pkg.org/badges/phosphoricons?color=brightgreen)](https://cran.r-project.org/package=phosphoricons)
 [![Codecov test
 coverage](https://codecov.io/gh/dreamRs/phosphoricons/branch/master/graph/badge.svg)](https://app.codecov.io/gh/dreamRs/phosphoricons?branch=master)
